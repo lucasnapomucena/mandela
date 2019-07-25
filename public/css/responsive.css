@@ -53,6 +53,12 @@
 }
 
 @media screen and (max-width: 768px) {
+    .about-background {
+        background-position: right center;
+    }
+    .about .box-about {
+        left: 0
+    }
     .banner-text {
         padding-top: 30%;
     }
@@ -91,10 +97,27 @@
     }
     .person img {
         display: block;
-        margin: 0 auto;
+        margin: 0 auto 20px;
     }
     .contact form textarea {
         margin-top: 20px;
+    }
+    .work img {
+        max-width: 500px;
+    }
+    .newsletter form {
+        width: 100%;
+        display: block;
+    }
+    .newsletter form input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .newsletter form button,
+    .contact form button {
+        display: block;
+        float: none;
+        width: 100%;
     }
 }
 

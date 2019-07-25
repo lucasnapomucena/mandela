@@ -37,6 +37,16 @@ body {
     overflow-x: hidden;
 }
 
+p,
+small,
+strong,
+input,
+textarea,
+button {
+    font-family: 'Montserrat';
+    font-size: 0.75rem
+}
+
 ul,
 ol {
     margin: 0;
@@ -167,6 +177,10 @@ h5 {
     margin-bottom: 50px
 }
 
+.relative {
+    position: relative;
+}
+
 
 /* ==========================================================================
 	$Header
@@ -214,10 +228,6 @@ h5 {
     padding-bottom: 30px;
 }
 
-#header.fixed .nav-toggle {
-    top: 18px;
-}
-
 .navigation.open {
     opacity: 0.9;
     visibility: visible;
@@ -252,10 +262,10 @@ h5 {
     display: none;
     height: 44px;
     overflow: hidden;
-    position: fixed;
-    right: 5%;
+    position: absolute;
+    right: 0;
     text-indent: 100%;
-    top: 32px;
+    top: -10px;
     white-space: nowrap;
     width: 44px;
     z-index: 99999;
@@ -444,7 +454,7 @@ h5 {
 
 .about-background {
     background: url(../images/background-sobrenos.png);
-    background-position: center -96px;
+    background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -526,6 +536,10 @@ h5 {
     -o-transition: all, 0.5s;
     -webkit-transition: all, 0.5s;
     transition: all, 0.5s;
+}
+
+.work img {
+    max-width: 350px;
 }
 
 .work h5,
@@ -715,6 +729,7 @@ h5 {
     font-weight: 600;
     font-size: 0.75rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 
@@ -807,6 +822,7 @@ h5 {
     font-weight: 600;
     font-size: 0.75rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 
