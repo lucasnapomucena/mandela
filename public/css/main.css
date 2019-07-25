@@ -4,8 +4,19 @@
 Typography
 ========================================================================== */
 
+*,
+html,
+body,
+ :before,
+ :after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 a {
     color: #e84545;
+    text-decoration: none;
 }
 
 a:hover,
@@ -23,6 +34,7 @@ body {
     font-family: 'Montserrat';
     font-weight: 300;
     color: #000;
+    overflow-x: hidden;
 }
 
 ul,
@@ -82,6 +94,18 @@ h5 {
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-right {
+    text-align: right;
 }
 
 .btn {
@@ -152,7 +176,6 @@ h5 {
     position: fixed;
     width: 100%;
     z-index: 999;
-    background: rgba(0, 0, 0, 0.2);
 }
 
 #header .header-content {
@@ -170,10 +193,15 @@ h5 {
     float: left;
 }
 
-#header .logo img {
-    -moz-animation-delay: 0.3s;
-    -webkit-animation-delay: 0.3s;
-    animation-delay: 0.3s;
+#header .logo img {}
+
+#header .logo img:hover {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
 }
 
 #header.fixed {
@@ -379,15 +407,15 @@ h5 {
 ========================================================================== */
 
 .banner {
-    background-image: url(../images/mandela-home.jpg);
+    background-image: url(../images/diversidade-no-mercado-de-trabalho.png);
     background-position: center top;
     background-repeat: no-repeat;
     -moz-background-size: cover;
     -o-background-size: cover;
     -webkit-background-size: cover;
     background-size: cover;
-    min-height: 750px;
     margin-bottom: 10px;
+    padding-bottom: 50px;
 }
 
 .banner-text {
@@ -561,14 +589,20 @@ h5 {
     padding-right: 20px;
 }
 
+.person-content p {
+    margin-bottom: 10px
+}
+
 .person h4 {
     font-weight: 400;
+    margin-bottom: 5px;
 }
 
 .person h5 {
     color: #e84545;
     font-size: 13px;
     font-weight: 400;
+    margin-bottom: 10px;
 }
 
 .social-icons {
@@ -576,7 +610,7 @@ h5 {
 }
 
 .social-icons li {
-    float: left;
+    display: inline-block;
 }
 
 .social-icons a {
@@ -619,7 +653,8 @@ h5 {
 .service .box-service h3 {
     font-size: 1rem;
     text-transform: uppercase;
-    font-weight: 600
+    font-weight: 600;
+    margin-bottom: 10px;
 }
 
 .service .box-service p {
