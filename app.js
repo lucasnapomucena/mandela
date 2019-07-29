@@ -14,7 +14,7 @@ app.set('view engine', 'handlebars');
 app.use(express.static(path.join(__dirname, '/public/')));
 
 app.get('/', (req, res) => {
-    res.render('index', { title: "Vem fazer seu site aqui no Mandela.com.br", description: "Agencia especializada em Marketing digital, invista em estratégias, agencia digital em suzano, agencia digital em santo andré web designer, aplicativos, ecommerce, loja virtual" });
+    res.render('index', { title: "Vem fazer seu site aqui no Mandela.com.br", description: "A Mandela é uma agência digital especializada no desenvolvimento de sites, sistemas web personalizados e lojas virtuais." });
 });
 
 app.get('/blog', (req, res) => {

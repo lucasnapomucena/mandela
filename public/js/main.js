@@ -10,6 +10,12 @@ $(document).ready(function() {
         }
     });
 
+    $('.logo').mouseover(function() {
+        $('.logo img').addClass('animated flipInX');
+    }).mouseout(function() {
+        $('.logo img').removeClass('animated flipInX');
+    });
+
     // Waypoints
     $('.work').waypoint(function() {
         $('.work').addClass('animated fadeIn');
